@@ -32,7 +32,7 @@ class RegForm(forms.Form):
             if not any(char.isdigit() for char in password):
                 errors.append('Password must contain at least one numeric character.')
             if not any(char in '!@#$%^&*()_+-=[]{}|;:,.<>?/`~' for char in password):
-                errors.append('Password must contain at least one special character.')
+                errors.append('Password must contain at least one special character (eg.!@#$%^&*).')
             if not any(char.islower() for char in password):
                 errors.append('Password must contain at least one lowerrcase letter.')
                             
