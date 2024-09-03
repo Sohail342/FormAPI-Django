@@ -1,4 +1,4 @@
-# [Live](https://ps0-dynamic-davy.circumeo-apps.net/)
+# [Live](https://3yp-ingenious-einstein.circumeo-apps.net/)
 
 # Django FormAPI Project
 
@@ -14,7 +14,6 @@ The Django FormAPI project is a simple registration form application that allows
 
 
 ### Overview
-- FormAPI
 ![FormAPI](core/static/core/img/form.JPG)
 
 
