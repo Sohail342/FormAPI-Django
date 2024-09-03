@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render
 from .form import RegForm
 from .models import RegModel
+from django.contrib import messages
 
 def formAPI(request):
     if request.method == "POST":
@@ -19,7 +20,9 @@ def formAPI(request):
             else:
                 reg = RegModel.objects.create(name=name, email=email, password=password, phone=phone)
                 reg.save()
+                messages.success(request, 'Created successfully')
                 return redirect('formAPI')
+                
     else:
         form = RegForm()
     return render(request, 'core/index.html', {'form':form})

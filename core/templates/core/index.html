@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
-
+<style>
+    .success{
+        color:blue;
+    }
+</style>
 <body>
 
     <div class="wrapper">
@@ -70,8 +74,14 @@
                     
                     <input type="Submit" value="Register Now">
                 </form>
+                <div>
+                    {% if messages %} 
+                        {% for message in messages %} 
+                        <p {% if message.tags %} class="{{message.tags}} {% endif %}">{{message}}</p> 
+                        {% endfor %}
+                    {% endif %}
+                </div>
             </div>
-
         </div>
     </div>
 
