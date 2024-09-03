@@ -1,6 +1,6 @@
 # [Live](https://3yp-ingenious-einstein.circumeo-apps.net/)
 
-# Django FormAPI Project
+# Django FormAPI
 
 The Django FormAPI project is a simple registration form application that allows users to register with their name, email, password, and phone number. It includes validation for the input fields and displays appropriate error messages if the input does not meet the specified criteria.
 
